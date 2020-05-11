@@ -34,11 +34,11 @@ public class PlayerController : MonoBehaviour
         movement= Input.GetAxis ("Horizontal");
         if(movement > 0f){
             rigidBody.velocity = new Vector2(movement * speed, rigidBody.velocity.y);
-            transform.localScale = new Vector2(0.3668365f,0.310434f);
+            transform.localScale = new Vector2(1.078178f,0.8029382f);
         }
         else if (movement < 0f){
              rigidBody.velocity = new Vector2(movement * speed, rigidBody.velocity.y);
-             transform.localScale = new Vector2(-0.3668365f,0.310434f);
+             transform.localScale = new Vector2(-1.078178f,0.8029382f);
         }
         else
         {
