@@ -6,6 +6,8 @@ TagManager:
   tags:
   - FallDetector
   - Checkpoint
+  - MusicPlayer
+  - turn-patrol
   layers:
   - Default
   - TransparentFX
