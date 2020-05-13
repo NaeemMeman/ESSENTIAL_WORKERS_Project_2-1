@@ -1364,6 +1364,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   finishFlag: {fileID: 0}
   finishReached: 0
+  nextLevel: WinScene
 --- !u!60 &615749676
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2975,7 +2976,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   respawnDelay: 1
   gamePlayer: {fileID: 0}
-  coins: 0
   coinText: {fileID: 1250134664}
 --- !u!222 &1548735702
 CanvasRenderer:

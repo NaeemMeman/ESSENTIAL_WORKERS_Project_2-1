@@ -10,6 +10,8 @@ public class ButtonController : MonoBehaviour
     public void Level(string _Level){
         stringLevel = _Level;
         Application.LoadLevel (stringLevel);
+        GlobalManager.score = 0;
+        LevelManager.coins = 0;
     }
 
     public void Quit(){
