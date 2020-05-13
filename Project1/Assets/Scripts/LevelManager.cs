@@ -7,7 +7,7 @@ public class LevelManager : MonoBehaviour
 {
     public float respawnDelay;
     public PlayerController gamePlayer;
-    public int coins;
+    public static int coins;
     public Text coinText;
     // Start is called before the first frame update
     void Start()

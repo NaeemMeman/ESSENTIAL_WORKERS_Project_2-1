@@ -7,6 +7,8 @@ public class FinishLine : MonoBehaviour
     public Sprite finishFlag;
     private SpriteRenderer finishSpriteRenderer;
     public bool finishReached;
+    public string nextLevel;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +23,7 @@ public class FinishLine : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.tag == "Player"){
-            Application.LoadLevel("Winscene");
+            Application.LoadLevel(nextLevel);
         }
     }
 }

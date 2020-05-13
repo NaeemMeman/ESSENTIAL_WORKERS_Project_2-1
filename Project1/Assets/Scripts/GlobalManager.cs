@@ -21,5 +21,10 @@ public class GlobalManager : MonoBehaviour
 			Destroy(gameObject);
 		}
 	}
-	
+
+	void Update()
+	{
+		GlobalManager.score = LevelManager.coins * (LifeManage.Life + 1);
+	}
+
 }
