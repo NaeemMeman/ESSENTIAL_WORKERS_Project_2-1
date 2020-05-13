@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetButtonDown("Jump") && isTouchingGround){
             rigidBody.velocity = new Vector2(rigidBody.velocity.x,jumpSpeed);
         }
+        
         playerAnimation.SetFloat ("Speed",Mathf.Abs(rigidBody.velocity.x));
         playerAnimation.SetBool ("OnGround", isTouchingGround);
     }
@@ -58,7 +59,11 @@ public class PlayerController : MonoBehaviour
         if(other.tag == "Checkpoint"){
             respawnPoint=other.transform.position;
         }
+      
     }
+
+    
+
 
     public IEnumerator Knockback (float knockDur, float knockbackPwr, Vector3 knockbackDir){
         float timer =0;
@@ -68,4 +73,7 @@ public class PlayerController : MonoBehaviour
         }
         yield return 0;
     }
+    
 }
+
+
