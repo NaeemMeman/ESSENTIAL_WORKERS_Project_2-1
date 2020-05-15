@@ -83,6 +83,13 @@ public class PlayerController : MonoBehaviour
 				RemoveLife ();
 			}
 	
+            if (other.collider.tag.Equals ("heart")) {
+				
+				Destroy (other.gameObject);
+				
+
+				AddLife ();
+			}
     
 		}
 	}
@@ -98,7 +105,14 @@ public class PlayerController : MonoBehaviour
         
     }
     
-
+void AddLife ()
+	{
+		//code to add more hearts goes here
+		if (life < 1f) {
+			life += 0.2f;
+			lifeFill.fillAmount = life;
+		}
+	}
 
     void RemoveLife ()
 	{
