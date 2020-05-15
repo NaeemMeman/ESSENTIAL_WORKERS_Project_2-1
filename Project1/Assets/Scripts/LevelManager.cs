@@ -12,7 +12,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         gamePlayer=FindObjectOfType<PlayerController>();
-        coinText.text="Coins: " + GlobalManager.coins;
+        coinText.text=": " + GlobalManager.coins;
     }
 
     // Update is called once per frame
@@ -34,6 +34,6 @@ public class LevelManager : MonoBehaviour
 
     public void AddCoins(int numberOfCoins){
         GlobalManager.coins += numberOfCoins;
-        coinText.text="Coins: " + GlobalManager.coins;
+        coinText.text=": " + GlobalManager.coins;
     }
 }
