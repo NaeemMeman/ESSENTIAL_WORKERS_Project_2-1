@@ -9,6 +9,7 @@ TagManager:
   - MusicPlayer
   - turn-patrol
   - Platform
+  - Obstacles
   layers:
   - Default
   - TransparentFX
