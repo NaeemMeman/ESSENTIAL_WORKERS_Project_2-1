@@ -1,9 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+
+    public bool isGameover = false;
+
     public float jumpSpeed =5f;
     public float speed = 5f;
     private float movement = 0f;
@@ -17,6 +22,10 @@ public class PlayerController : MonoBehaviour
     private Animator playerAnimation;
     public Vector3 respawnPoint;
     public LevelManager gameLevelManager;
+
+    public Image lifeFill;
+
+	float life = 1f;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +64,7 @@ public class PlayerController : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other){
         if(other.tag =="FallDetector"){
             gameLevelManager.Respawn();
+            RemoveLife ();
         }
         if(other.tag == "Checkpoint"){
             respawnPoint=other.transform.position;
@@ -62,7 +72,20 @@ public class PlayerController : MonoBehaviour
       
     }
 
+    void OnCollisionEnter2D (Collision2D other)
+	{
+		if (!isGameover) {
+			
+			
+			if (other.collider.tag.Equals ("Obstacles")){
+				Vector2 contact = other.contacts [0].point;
+
+				RemoveLife ();
+			}
+	
     
+		}
+	}
 
 
     public IEnumerator Knockback (float knockDur, float knockbackPwr, Vector3 knockbackDir){
@@ -72,8 +95,24 @@ public class PlayerController : MonoBehaviour
             rigidBody.AddForce(new Vector3(knockbackDir.x * -100, knockbackDir.y * knockbackPwr, transform.position.z));
         }
         yield return 0;
+        
     }
     
+
+
+    void RemoveLife ()
+	{
+		//code to remove hearts goes here
+		if (life > 0.2f) {
+			life -= 0.2f;
+			lifeFill.fillAmount = life;
+		}
+
+		if (life <= 0.2f) {
+			isGameover = true;
+			SceneManager.LoadScene("EndScene");
+		}
+	}
 }
 
 
