@@ -5,6 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class nextScene : MonoBehaviour
 {
+
+    public Animator transition;
+    
+    public float transitionTime = 1f;
+    
+    void Update()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            LoadNextLevel();
+        }
+    }
+    
+    public void LoadNextLevel()
+    {
+        StartCoroutine(LoadLevel(        nextSceneToLoad = SceneManager.GetActiveScene().buildIndex+1));
+    }
+    
     private int nextSceneToLoad;
     // Start is called before the first frame update
     void Start()
@@ -17,5 +35,14 @@ public class nextScene : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         SceneManager.LoadScene(nextSceneToLoad);
+    }
+    
+    IEnumerator LoadLevel(int levelIndex)
+    {
+        transition.SetTrigger("Start");
+        
+        yield return new WaitForSeconds(transitionTime);
+        
+        SceneManager.LoadScene(levelIndex);
     }
 }
