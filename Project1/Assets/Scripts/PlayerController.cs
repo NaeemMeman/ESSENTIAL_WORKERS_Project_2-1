@@ -25,8 +25,6 @@ public class PlayerController : MonoBehaviour
 
     public Image lifeFill;
 
-	float life = 1f;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +32,7 @@ public class PlayerController : MonoBehaviour
         playerAnimation=GetComponent<Animator> ();
         respawnPoint=transform.position;
         gameLevelManager=FindObjectOfType<LevelManager> ();
+        lifeFill.fillAmount = GlobalManager.life;
     }
 
     // Update is called once per frame
@@ -108,21 +107,21 @@ public class PlayerController : MonoBehaviour
 void AddLife ()
 	{
 		//code to add more hearts goes here
-		if (life < 1f) {
-			life += 0.2f;
-			lifeFill.fillAmount = life;
-		}
+		if (GlobalManager.life < 1f) {
+            GlobalManager.life += 0.2f;
+			lifeFill.fillAmount = GlobalManager.life;
+        }
 	}
 
     void RemoveLife ()
 	{
 		//code to remove hearts goes here
-		if (life > 0.2f) {
-			life -= 0.2f;
-			lifeFill.fillAmount = life;
-		}
+		if (GlobalManager.life > 0.2f) {
+            GlobalManager.life -= 0.2f;
+			lifeFill.fillAmount = GlobalManager.life;
+        }
 
-		if (life <= 0.2f) {
+		if (GlobalManager.life <= 0.2f) {
 			isGameover = true;
 			SceneManager.LoadScene("EndScene");
 		}
