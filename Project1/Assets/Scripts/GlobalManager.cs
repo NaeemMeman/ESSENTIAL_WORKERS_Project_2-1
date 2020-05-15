@@ -7,6 +7,8 @@ public class GlobalManager : MonoBehaviour
     public static GlobalManager Instance;
 	
 	public static int score = 0;
+	public static int life = 3;
+	public static int coins = 0;
 	public static float volume = 1.0f;
 	
 	void Awake()
@@ -24,7 +26,7 @@ public class GlobalManager : MonoBehaviour
 
 	void Update()
 	{
-		GlobalManager.score = LevelManager.coins * (LifeManage.Life + 1);
+		GlobalManager.score = coins * (life+1);
 	}
 
 }

@@ -7,13 +7,12 @@ public class LevelManager : MonoBehaviour
 {
     public float respawnDelay;
     public PlayerController gamePlayer;
-    public static int coins;
     public Text coinText;
     // Start is called before the first frame update
     void Start()
     {
         gamePlayer=FindObjectOfType<PlayerController>();
-        coinText.text="Coins: " + coins;
+        coinText.text="Coins: " + GlobalManager.coins;
     }
 
     // Update is called once per frame
@@ -34,7 +33,7 @@ public class LevelManager : MonoBehaviour
     }
 
     public void AddCoins(int numberOfCoins){
-        coins += numberOfCoins;
-        coinText.text="Coins: " + coins;
+        GlobalManager.coins += numberOfCoins;
+        coinText.text="Coins: " + GlobalManager.coins;
     }
 }
