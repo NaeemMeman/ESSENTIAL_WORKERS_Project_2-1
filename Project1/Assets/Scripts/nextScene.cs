@@ -12,10 +12,7 @@ public class nextScene : MonoBehaviour
     
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
-        {
-            LoadNextLevel();
-        }
+
     }
     
     public void LoadNextLevel()
