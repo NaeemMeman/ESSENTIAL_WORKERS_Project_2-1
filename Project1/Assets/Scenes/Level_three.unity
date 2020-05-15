@@ -1123,6 +1123,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fourspikesSteel (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5587635390892140449, guid: 4e7094c52f37765449d27083f8d1ac28,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9202689743551298098, guid: 4e7094c52f37765449d27083f8d1ac28,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1195,6 +1200,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e7094c52f37765449d27083f8d1ac28, type: 3}
+--- !u!1 &217555920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2286868386172165073, guid: 4e7094c52f37765449d27083f8d1ac28,
+    type: 3}
+  m_PrefabInstance: {fileID: 962037226}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &217555923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217555920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce0983dc76148b4abf883309707da21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &217555924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 217555920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5e10d121332740885f653f5c2b14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeToAdd: -1
 --- !u!1001 &222297308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1453,6 +1489,37 @@ Transform:
   m_Father: {fileID: 592445090}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &315300761 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2286868386172165073, guid: 4e7094c52f37765449d27083f8d1ac28,
+    type: 3}
+  m_PrefabInstance: {fileID: 2124868528}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &315300764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315300761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce0983dc76148b4abf883309707da21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &315300765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315300761}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5e10d121332740885f653f5c2b14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeToAdd: -1
 --- !u!1001 &362292273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1930,8 +1997,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -466438595
-  m_SortingLayer: 3
+  m_SortingLayerID: 1855978311
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 772fb954fc5e99244a1ec1948ca98707, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1964,6 +2031,99 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 860073429}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &515779396 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2286868386172165073, guid: 4e7094c52f37765449d27083f8d1ac28,
+    type: 3}
+  m_PrefabInstance: {fileID: 857986752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &515779399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515779396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5e10d121332740885f653f5c2b14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeToAdd: -1
+--- !u!114 &515779400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 515779396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce0983dc76148b4abf883309707da21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &531365763 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2286868386172165073, guid: 4e7094c52f37765449d27083f8d1ac28,
+    type: 3}
+  m_PrefabInstance: {fileID: 200683769}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &531365766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531365763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5e10d121332740885f653f5c2b14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeToAdd: -1
+--- !u!114 &531365767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531365763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce0983dc76148b4abf883309707da21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &534821506 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2286868386172165073, guid: 4e7094c52f37765449d27083f8d1ac28,
+    type: 3}
+  m_PrefabInstance: {fileID: 2286946443305665239}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &534821509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534821506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5e10d121332740885f653f5c2b14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeToAdd: -1
+--- !u!114 &534821510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534821506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce0983dc76148b4abf883309707da21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &551181434
 GameObject:
   m_ObjectHideFlags: 0
@@ -2368,6 +2528,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fourspikesSteel (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5587635390892140449, guid: 4e7094c52f37765449d27083f8d1ac28,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9202689743551298098, guid: 4e7094c52f37765449d27083f8d1ac28,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2716,6 +2881,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fourspikesSteel (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 5587635390892140449, guid: 4e7094c52f37765449d27083f8d1ac28,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9202689743551298098, guid: 4e7094c52f37765449d27083f8d1ac28,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2799,6 +2969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fourspikesSteel (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587635390892140449, guid: 4e7094c52f37765449d27083f8d1ac28,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9202689743551298098, guid: 4e7094c52f37765449d27083f8d1ac28,
         type: 3}
@@ -3176,6 +3351,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fourspikesSteel (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5587635390892140449, guid: 4e7094c52f37765449d27083f8d1ac28,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9202689743551298098, guid: 4e7094c52f37765449d27083f8d1ac28,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3434,6 +3614,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fourspikesSteel (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587635390892140449, guid: 4e7094c52f37765449d27083f8d1ac28,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9202689743551298098, guid: 4e7094c52f37765449d27083f8d1ac28,
         type: 3}
@@ -3799,6 +3984,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4a42b2c00ac41604983cf7ac6ea570a4, type: 3}
+--- !u!1 &992256859 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2286868386172165073, guid: 4e7094c52f37765449d27083f8d1ac28,
+    type: 3}
+  m_PrefabInstance: {fileID: 1388651221}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &992256862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992256859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce0983dc76148b4abf883309707da21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &992256863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992256859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5e10d121332740885f653f5c2b14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeToAdd: -1
 --- !u!4 &994873797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2288533249490853746, guid: fc5cb43758dafc847acab852c7f940f4,
@@ -4730,6 +4946,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 862e5f85979170943a71cc10f83bcb8d, type: 3}
+--- !u!1 &1304075288 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2286868386172165073, guid: 4e7094c52f37765449d27083f8d1ac28,
+    type: 3}
+  m_PrefabInstance: {fileID: 763877214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1304075291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304075288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce0983dc76148b4abf883309707da21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1304075292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1304075288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5e10d121332740885f653f5c2b14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeToAdd: -1
 --- !u!1 &1345769020
 GameObject:
   m_ObjectHideFlags: 0
@@ -4953,6 +5200,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fourspikesSteel (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587635390892140449, guid: 4e7094c52f37765449d27083f8d1ac28,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9202689743551298098, guid: 4e7094c52f37765449d27083f8d1ac28,
         type: 3}
@@ -6224,7 +6476,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -6265,6 +6517,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 430029872}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1778733105 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2286868386172165073, guid: 4e7094c52f37765449d27083f8d1ac28,
+    type: 3}
+  m_PrefabInstance: {fileID: 777734335}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1778733108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778733105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5e10d121332740885f653f5c2b14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeToAdd: -1
+--- !u!114 &1778733109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778733105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce0983dc76148b4abf883309707da21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1784432763 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9202689743551298098, guid: 4e7094c52f37765449d27083f8d1ac28,
@@ -7047,6 +7330,37 @@ RectTransform:
   m_AnchoredPosition: {x: 7.18, y: -0.03}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &2091731443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2286868386172165073, guid: 4e7094c52f37765449d27083f8d1ac28,
+    type: 3}
+  m_PrefabInstance: {fileID: 704904632}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2091731446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091731443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa5e10d121332740885f653f5c2b14f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LifeToAdd: -1
+--- !u!114 &2091731447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091731443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ce0983dc76148b4abf883309707da21, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2124868528
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7058,6 +7372,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fourspikesSteel (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587635390892140449, guid: 4e7094c52f37765449d27083f8d1ac28,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9202689743551298098, guid: 4e7094c52f37765449d27083f8d1ac28,
         type: 3}
@@ -7142,6 +7461,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fourspikesSteel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5587635390892140449, guid: 4e7094c52f37765449d27083f8d1ac28,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9202689743551298098, guid: 4e7094c52f37765449d27083f8d1ac28,
         type: 3}
