@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 public class LifeManage : MonoBehaviour
 {
-    public static int Life;
-    public int MaxLife;
     public int LifeToAdd;
     Text text;
     public bool isDead;
@@ -14,25 +12,24 @@ public class LifeManage : MonoBehaviour
     void Start()
     {
         text = GetComponent<Text> ();
-        Life = MaxLife;
         isDead= false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Life<0)
-            Life =0;
-        text.text = " " + Life;
-        if(Life<=0){
+        if(GlobalManager.life < 0)
+            GlobalManager.life = 0;
+        text.text = " " + GlobalManager.life;
+        if(GlobalManager.life <= 0){
             Application.LoadLevel ("EndScene");
             isDead =true;
         }
     }
     public static void AddLife(int LifeToAdd){
-        Life += LifeToAdd;
+        GlobalManager.life += LifeToAdd;
     }
     public static void Reset(){
-        Life=0;
+        GlobalManager.life = 0;
     }
 }
