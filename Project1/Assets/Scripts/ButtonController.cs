@@ -12,7 +12,7 @@ public class ButtonController : MonoBehaviour
         Application.LoadLevel (stringLevel);
         GlobalManager.score = 0;
         GlobalManager.coins = 0;
-        GlobalManager.life = 3;
+        GlobalManager.life = 1.0f;
     }
 
     public void Quit(){
