@@ -2559,7 +2559,7 @@ PrefabInstance:
     - target: {fileID: 3962248785027468109, guid: 0a43e3057324a3e4e8edd6188211375a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3962248785027468109, guid: 0a43e3057324a3e4e8edd6188211375a,
         type: 3}
@@ -7431,7 +7431,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1732733079}
   - component: {fileID: 1732733080}
-  - component: {fileID: 1732733081}
   m_Layer: 0
   m_Name: FallDetector
   m_TagString: FallDetector
@@ -7479,19 +7478,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &1732733081
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1732733078}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfa5e10d121332740885f653f5c2b14f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LifeToAdd: -1
 --- !u!4 &1747929674 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8019200015915221486, guid: 4a42b2c00ac41604983cf7ac6ea570a4,
@@ -7983,8 +7969,6 @@ GameObject:
   - component: {fileID: 1977710994}
   - component: {fileID: 1977710993}
   - component: {fileID: 1977710992}
-  - component: {fileID: 1977710991}
-  - component: {fileID: 1977710990}
   m_Layer: 8
   m_Name: crab-walk-1
   m_TagString: Obstacles
@@ -7992,31 +7976,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1977710990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977710989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ce0983dc76148b4abf883309707da21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1977710991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1977710989}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfa5e10d121332740885f653f5c2b14f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LifeToAdd: -1
 --- !u!114 &1977710992
 MonoBehaviour:
   m_ObjectHideFlags: 0
