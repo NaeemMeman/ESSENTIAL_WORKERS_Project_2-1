@@ -3793,13 +3793,38 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Mohammednaeem Meman
+  m_text: 'Essential Workers
 
-    Hangill Chong
 
-    Homin Lee
+    Mohammednaeem Meman: UI Designer
 
-    Man Thakali'
+    Designs
+    the User Interface and any GUIs that are in the game.
+
+    
+
+    Hangill Chong:
+    Level Designer
+
+    Designs the levels by using the available assets in a way
+    that is challenging but not impossible.
+
+    
+
+    Homin Lee: Asset Creator
+
+    Creates
+    assets that can be used by the level designer when designing the game.
+
+    
+
+    Man
+    Thakali: Sound Designer
+
+    Deals with all the sounds that need to be used
+    inside the game.
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3827,8 +3852,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 45
-  m_fontSizeBase: 45
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4576,6 +4601,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 50db18dbc04d0884a83eff18db0b94ad, type: 3}
+      objectReference: {fileID: 8300000, guid: 810f9628fe4f5254fa048f29d4f2a67a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19ae4a096fa4a9940af9e82ed5334435, type: 3}
