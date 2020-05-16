@@ -26,7 +26,15 @@ public class GlobalManager : MonoBehaviour
 
 	void Update()
 	{
-		GlobalManager.score = (GlobalManager.coins + 1) * ((int)(GlobalManager.life * 5) + 1);
+		if(GlobalManager.life < 0)
+        {
+			GlobalManager.score = (GlobalManager.coins + 1) * 1;
+		}
+		else
+        {
+			GlobalManager.score = (GlobalManager.coins + 1) * ((int)(GlobalManager.life * 5) + 1);
+		}
+		
 	}
 
 }
