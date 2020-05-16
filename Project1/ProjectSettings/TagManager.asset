@@ -10,6 +10,7 @@ TagManager:
   - turn-patrol
   - Platform
   - Obstacles
+  - heart
   layers:
   - Default
   - TransparentFX
